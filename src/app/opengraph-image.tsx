@@ -25,10 +25,6 @@ export default function og() {
       >
         Next JS 13 + Pico CSS = ❤️
       </div>
-    ),
-    {
-      width: size.width,
-      height: size.height,
-    }
+    )
   );
 }
