@@ -27,7 +27,6 @@ export default async function og({ params }: { params: { id: number } }) {
           }}
         >
           <picture>
-            <source srcSet={user.avatar} type="image/webp" />
             <img src={user.avatar} alt={alt} />
           </picture>
           {user.first_name} {user.last_name}
