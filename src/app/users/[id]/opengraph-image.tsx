@@ -1,8 +1,12 @@
 import { getUser } from '@/services/user.service';
 import { ImageResponse } from 'next/server';
 
+export const config = {
+  runtime: 'edge',
+};
+
 export const size = { width: 1200, height: 600 };
-export const alt = 'About Acme';
+export const alt = 'Imagen de perfil';
 export const contentType = 'image/png';
 
 export default async function og({ params }: { params: { id: number } }) {
