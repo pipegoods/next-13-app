@@ -1,5 +1,5 @@
 import { getUser } from '@/services/user.service';
-import { ImageResponse } from 'next/server';
+import { ImageResponse } from '@vercel/og';
 
 export const config = {
   runtime: 'edge',
