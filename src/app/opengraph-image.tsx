@@ -1,8 +1,6 @@
 import { ImageResponse } from '@vercel/og';
 
-export const config = {
-  runtime: 'edge',
-};
+export const runtime = 'edge';
 
 export const size = { width: 1200, height: 600 };
 export const alt = 'Pagina de inicio';
