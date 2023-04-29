@@ -2,7 +2,6 @@ import { getUser } from '@/services/user.service';
 import { ImageResponse } from '@vercel/og';
 
 export const runtime = 'edge';
-
 export const size = { width: 1200, height: 600 };
 export const alt = 'Imagen de perfil';
 export const contentType = 'image/png';
@@ -26,12 +25,15 @@ export default async function og({ params }: { params: { id: number } }) {
             gap: 32,
           }}
         >
+          👋,
           <picture>
-            <img src={user.avatar} alt={alt} />
+            <img src={user.avatar} alt={alt} width={128} />
           </picture>
-          {user.first_name} {user.last_name}
         </div>
-      )
+      ),
+      {
+        emoji: 'twemoji',
+      }
     );
   } catch (e: any) {
     console.log(`${e.message}`);
