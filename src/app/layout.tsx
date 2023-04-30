@@ -6,6 +6,7 @@ const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
 });
+
 export const metadata = {
   title: 'Next 13 + Pico CSS = ❤️',
   description: 'Probando Next.js 13 con Pico CSS',
